@@ -2,5 +2,14 @@
 """
 Module to showcase type annotations
 """
+from typing import Tuple, Union
 
-def to_kv()
+
+def to_kv(k: str, v: Union[float, int]) -> Tuple:
+    """
+    Returns:
+        A tuple:
+            First element: k as a string
+            Second element: the square of v as a float
+    """
+    return (k, float(v*v))
