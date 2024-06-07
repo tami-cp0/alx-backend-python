@@ -12,4 +12,4 @@ def to_kv(k: str, v: Union[float, int]) -> Tuple[str, float]:
             First element: k as a string
             Second element: the square of v as a float
     """
-    return (k, float(v**2))
+    return (k, float(v * v))
