@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-
+Module
 """
 from typing import Callable
 
@@ -11,10 +11,10 @@ def make_multiplier(multiplier: float) -> Callable[[float], float]:
         A function that multiples the multiplier against a float
     """
 
-    def multiply(multiplier: float) -> float:
+    def multiply(number: float) -> float:
         """
         Multiples multiplier against a float
         """
-        return multiplier * multiplier
+        return multiplier * number
 
     return multiply
