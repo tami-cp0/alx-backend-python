@@ -6,10 +6,5 @@ from typing import Tuple, Union
 
 
 def to_kv(k: str, v: Union[float, int]) -> Tuple[str, float]:
-    """
-    Returns:
-        A tuple:
-            First element: k as a string
-            Second element: the square of v as a float
-    """
+    """returns a tuple of the string & square of v as float"""
     return (k, float(v * v))
