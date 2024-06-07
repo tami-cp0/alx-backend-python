@@ -5,7 +5,7 @@ Module to showcase type annotations
 from typing import Tuple, Union
 
 
-def to_kv(k: str, v: Union[float, int]) -> tuple[str, float]:
+def to_kv(k: str, v: Union[float, int]) -> Tuple[str, float]:
     """
     Returns:
         A tuple:
