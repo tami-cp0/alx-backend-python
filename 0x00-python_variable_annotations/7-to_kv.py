@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
-""" Module that perform an operation to tuple"""
+"""
+Module to showcase type annotations
+"""
+from typing import Tuple, Union
 
 
-import typing
-
-
-def to_kv(k: str, v: typing.Union[int, float]) -> typing.Tuple[str, float]:
-    """returns a tuple of the string & square of v as float"""
+def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
+    """
+    Returns:
+        A tuple:
+            First element: k as a string
+            Second element: the square of v as a float
+    """
     return (k, float(v * v))
